@@ -34,7 +34,7 @@ function Home() {
       className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-900 text-white overflow-hidden font-mono border-t-2 border-white"
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-20">
-        {/* Imagem - Tamanho levemente reduzido para equilíbrio */}
+        {/* Imagem */}
         <div className="shrink-0 w-64 h-64 md:w-72 md:h-72 rounded-none overflow-hidden border-4 border-white shadow-[8px_8px_0px_0px_rgba(96,165,250,1)] transform transition-transform duration-500 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
           <img
             src="/assets/images/pablohaddad.jpeg"
@@ -60,9 +60,8 @@ function Home() {
           </div>
 
           <p className="max-w-lg mx-auto md:mx-0 text-base md:text-lg text-gray-300 leading-relaxed mb-8 border-l-4 border-white pl-4 italic">
-            Sou pedreiro de software desde 2023, amante do Home Office e
-            entusiasta de soluções simples. Gosto de ler, aprender e
-            compartilhar meus conhecimentos com meus colegas.
+            Sou pedreiro de software desde 2023, e amante do Home Office. Obrigado pela visita!
+            Deixe um like se curtir o meu portfolio, ou um dislike se quiser.
           </p>
 
           {/* Seção de Redes Sociais */}
@@ -71,7 +70,7 @@ function Home() {
               // ME_SIGA_NAS_REDES_SOCIAIS
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-              {/* Instagram - Vermelho/Rosa vibrante */}
+              {/* Instagram */}
               <a
                 href="https://instagram.com/devhaddad"
                 target="_blank"
@@ -81,7 +80,7 @@ function Home() {
                 Instagram
               </a>
 
-              {/* LinkedIn - Azul Clássico */}
+              {/* LinkedIn */}
               <a
                 href="https://linkedin.com/in/pablohaddad"
                 target="_blank"
@@ -91,17 +90,17 @@ function Home() {
                 LinkedIn
               </a>
 
-              {/* X (Twitter) - Preto com borda branca para contraste */}
+              {/* X (Twitter) - Corrigido: Agora com sombra Branca */}
               <a
                 href="https://twitter.com/devhaddad"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white text-[10px] md:text-xs font-black px-4 py-2 border-2 border-white shadow-[3px_3px_0px_0px_rgba(96,165,250,1)] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-75 uppercase tracking-tighter"
+                className="bg-black text-white text-[10px] md:text-xs font-black px-4 py-2 border-2 border-white shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-75 uppercase tracking-tighter"
               >
                 X
               </a>
 
-              {/* GitHub - Cinza Escuro/Preto com borda branca */}
+              {/* GitHub */}
               <a
                 href="https://github.com/pablitohaddad"
                 target="_blank"
