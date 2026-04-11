@@ -83,17 +83,30 @@ function Experience() {
   return (
     <section id="experiencias" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white font-mono border-t-4 border-white">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter inline-block border-b-4 border-blue-400 pb-2">
-            ./experiência_profissional
-          </h2>
+        
+        {/* CABEÇALHO DA SEÇÃO COM BOTÃO DE DOWNLOAD */}
+        <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter inline-block border-b-4 border-blue-400 pb-2">
+              ./experiência_profissional
+            </h2>
+          </div>
+          
+          {/* BOTÃO DOWNLOAD CV */}
+          <a 
+            href="/cv/CV_PabloHaddad.pdf" 
+            download="CV_PabloHaddad.pdf"
+            className="flex items-center gap-2 bg-blue-400 text-black px-6 py-3 font-black uppercase border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-75 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none active:bg-green-400"
+          >
+            <span className="text-xl">⤓</span> Baixar_CV
+          </a>
         </div>
 
         <div className="relative border-l-4 border-white ml-6 md:ml-16 pl-10 pb-8">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-20 relative">
               
-              {/* LOGO DA EMPRESA: Aumentado (w-14 h-14) e com animação hover */}
+              {/* LOGO DA EMPRESA */}
               <div className="absolute -left-[62px] top-0 w-14 h-14 border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] flex items-center justify-center overflow-hidden bg-gray-700 transition-all duration-75 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-pointer">
                 {exp.linkedin ? (
                   <a href={exp.linkedin} target="_blank" rel="noopener noreferrer" className="w-full h-full block">
@@ -105,11 +118,11 @@ function Experience() {
                     />
                   </a>
                 ) : (
-                  <img src={exp.logo || getFallbackLogo(exp.company, exp.color.replace('bg-', ''))} className="w-full h-full object-cover" />
+                  <img src={exp.logo || getFallbackLogo(exp.company, exp.color.replace('bg-', ''))} className="w-full h-full object-cover" alt={exp.company} />
                 )}
               </div>
 
-              {/* CARD: Estático (sem hover translate) */}
+              {/* CARD */}
               <div className="bg-white text-black p-6 border-2 border-white shadow-[6px_6px_0px_0px_rgba(96,165,250,1)]">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b-2 border-gray-200 pb-2">
                   <div>
