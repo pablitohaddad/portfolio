@@ -20,31 +20,29 @@ function Header() {
     }
   }, []);
   
-  useEffect(() => {
+ useEffect(() => {
   if (hasCounted.current) return;
 
+  // Pegando a chave das variáveis de ambiente
   const API_KEY = import.meta.env.VITE_COUNTER_API_KEY;
-  const UP_ENDPOINT = "https://api.counterapi.dev/v2/pablo-haddads-team-3684/first-counter-3684/up";
-  const GET_ENDPOINT = "https://api.counterapi.dev/v2/pablo-haddads-team-3684/first-counter-3684";
-
-  const headers = {
-    'Accept': 'application/json'
-  };
+  
+  // URLs configuradas para enviar a chave como parâmetro (evita erro de CORS no navegador do seu amigo)
+  const UP_ENDPOINT = `https://api.counterapi.dev/v2/pablo-haddads-team-3684/first-counter-3684/up?api_key=${API_KEY}`;
+  const GET_ENDPOINT = `https://api.counterapi.dev/v2/pablo-haddads-team-3684/first-counter-3684?api_key=${API_KEY}`;
 
   // 1. Primeiro incrementamos a visita
-  fetch(UP_ENDPOINT, { method: 'GET', headers })
-    .then(() => {
-      // 2. Depois que incrementou, buscamos o valor atualizado para exibir
-      return fetch(GET_ENDPOINT, { method: 'GET', headers });
+  fetch(UP_ENDPOINT)
+    .then(res => {
+      if (!res.ok) throw new Error('Falha ao incrementar');
+      return fetch(GET_ENDPOINT); // 2. Busca o valor real após o incremento
     })
     .then(res => res.json())
     .then(response => {
-      // Acessamos o up_count dentro do objeto data conforme o padrão da sua API
       if (response?.data?.up_count !== undefined) {
         setViews(response.data.up_count);
       }
     })
-    .catch(err => console.error("Erro ao atualizar contador:", err));
+    .catch(err => console.error("Erro na contagem global:", err));
 
   hasCounted.current = true;
 }, []);
