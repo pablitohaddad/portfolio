@@ -9,7 +9,7 @@ function Books() {
       color: 'bg-green-400',
       amazon: 'https://amzn.to/3PzX1X1',
       // Removida a barra inicial para o Vite buscar no servidor local corretamente
-      cover: 'assets/images/books/entendendoalgoritmos.png'
+      cover: '/images/books/entendendoalgoritmos.png'
     },
     {
       title: '14 Hábitos de Programadores Produtivos',
@@ -17,7 +17,7 @@ function Books() {
       analysis: 'O Zeno foca no que importa: consistência, soft skills e hábitos que te tornam um profissional de elite.',
       color: 'bg-yellow-400',
       amazon: 'https://amzn.to/3PyZ2Y2',
-      cover: 'assets/images/books/14habitosdeprogramadoresaltamenteprodutivos.png'
+      cover: '/images/books/14habitosdeprogramadoresaltamenteprodutivos.png'
     },
     {
       title: 'The Pragmatic Programmer',
@@ -25,7 +25,7 @@ function Books() {
       analysis: 'Começando agora, mas já deu para sentir que cada página é uma lição de maturidade profissional.',
       color: 'bg-blue-400',
       amazon: 'https://amzn.to/3v0A3B3',
-      cover: 'assets/images/books/thepragmaticprogammer.png'
+      cover: '/images/books/thepragmaticprogammer.png'
     },
     {
       title: 'Design Patterns (GoF)',
@@ -33,7 +33,7 @@ function Books() {
       analysis: 'Denso e clássico. Estudando os padrões criacionais para elevar o nível da arquitetura Java.',
       color: 'bg-purple-400',
       amazon: 'https://amzn.to/3I1C4D4',
-      cover: 'assets/images/books/designpatterns.png'
+      cover: '/images/books/designpatterns.png'
     }
   ];
 
@@ -44,7 +44,7 @@ function Books() {
       analysis: 'A jornada de Bilbo é a definição perfeita de sair da zona de conforto e encarar o desconhecido.',
       color: 'bg-orange-400',
       amazon: 'https://amzn.to/3T5E5F5',
-      cover: 'assets/images/books/hobbit.png'
+      cover: '/images/books/hobbit.png'
     },
     {
       title: 'Depois (Stephen King)',
@@ -52,7 +52,7 @@ function Books() {
       analysis: 'King sendo King. Um suspense sobrenatural que te prende do início ao fim.',
       color: 'bg-red-500',
       amazon: 'https://amzn.to/3U6G6H6',
-      cover: 'assets/images/books/depoisstephenking.png'
+      cover: '/images/books/depoisstephenking.png'
     },
     {
       title: 'Dom Quixote',
@@ -60,7 +60,7 @@ function Books() {
       analysis: 'O clássico dos clássicos. A loucura de Quixote é uma forma de manter a esperança viva.',
       color: 'bg-amber-600',
       amazon: 'https://amzn.to/3V7H7I7',
-      cover: 'assets/images/books/domquixote.png'
+      cover: '/images/books/domquixote.png'
     },
     {
       title: 'Fahrenheit 451',
@@ -68,7 +68,7 @@ function Books() {
       analysis: 'Assustadoramente atual. Uma reflexão necessária sobre o consumo de informação rasa.',
       color: 'bg-gray-500',
       amazon: 'https://amzn.to/3W8I8J8',
-      cover: 'assets/images/books/fahrenheit451.png'
+      cover: '/images/books/fahrenheit451.png'
     },
     {
       title: 'O Mágico de Oz',
@@ -76,7 +76,7 @@ function Books() {
       analysis: 'Redescobrindo os clássicos infantis sob uma ótica de engenharia de caminhos.',
       color: 'bg-pink-400',
       amazon: 'https://amzn.to/3X9J9K9',
-      cover: 'assets/images/books/magicodeoz.png'
+      cover: '/images/books/magicodeoz.png'
     }
   ];
 
