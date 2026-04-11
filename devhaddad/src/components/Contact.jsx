@@ -18,17 +18,15 @@ function Contact() {
           {/* Lado Esquerdo: Info */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black uppercase tracking-tighter">
-              Vamos construir algo juntos?
+              Quer trocar um papo?
             </h3>
             <p className="text-gray-700 font-medium leading-relaxed">
-              Estou sempre aberto a novas oportunidades, colaborações em
-              projetos open-source ou apenas para um café virtual sobre
-              engenharia de software.
+              Se quiser bater um papo sobre tecnologia, projetos ou somente se conectar via Linkedin, manda uma mensagem ae!!
             </p>
 
             <div className="bg-blue-400 p-4 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <p className="text-xs font-black uppercase text-black mb-1">
-                Direct_Mail:
+                Mensagem encaminhada para:
               </p>
               <a
                 href="mailto:pablohaddad73@gmail.com"

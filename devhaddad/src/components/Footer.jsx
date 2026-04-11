@@ -41,7 +41,7 @@ function Footer() {
 
         {/* Copyright Minimalista */}
         <div className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-          © {new Date().getFullYear()} — Built by Haddad
+          © {new Date().getFullYear()} — Feito por Pablo Haddad
         </div>
 
       </div>

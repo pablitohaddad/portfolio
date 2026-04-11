@@ -5,16 +5,15 @@ function Books() {
     {
       title: 'Entendendo Algoritmos',
       progress: 100,
-      analysis: 'Didática imbatível para visualizar o que acontece no código. Essencial para a base de qualquer dev.',
+      analysis: 'Melhor livro para quem nao sabe nada de Algoritmos (meu caso).',
       color: 'bg-green-400',
       amazon: 'https://amzn.to/3PzX1X1',
-      // Removida a barra inicial para o Vite buscar no servidor local corretamente
       cover: '/images/books/entendendoalgoritmos.png'
     },
     {
       title: '14 Hábitos de Programadores Produtivos',
       progress: 100,
-      analysis: 'O Zeno foca no que importa: consistência, soft skills e hábitos que te tornam um profissional de elite.',
+      analysis: 'O Zeno foca no que importa: consistência, soft skills e hábitos que te tornam um profissional completo.',
       color: 'bg-yellow-400',
       amazon: 'https://amzn.to/3PyZ2Y2',
       cover: '/images/books/14habitosdeprogramadoresaltamenteprodutivos.png'
@@ -22,15 +21,15 @@ function Books() {
     {
       title: 'The Pragmatic Programmer',
       progress: 5,
-      analysis: 'Começando agora, mas já deu para sentir que cada página é uma lição de maturidade profissional.',
+      analysis: 'Começando agora, estou lendo em ingles para praticar o idioma. O título é autoexplicativo.',
       color: 'bg-blue-400',
       amazon: 'https://amzn.to/3v0A3B3',
       cover: '/images/books/thepragmaticprogammer.png'
     },
     {
-      title: 'Design Patterns (GoF)',
+      title: 'Design Patterns',
       progress: 10,
-      analysis: 'Denso e clássico. Estudando os padrões criacionais para elevar o nível da arquitetura Java.',
+      analysis: 'Denso. Mas estudar os padrões de projeto é essencial MESMO.',
       color: 'bg-purple-400',
       amazon: 'https://amzn.to/3I1C4D4',
       cover: '/images/books/designpatterns.png'
@@ -41,23 +40,23 @@ function Books() {
     {
       title: 'O Hobbit',
       progress: 100,
-      analysis: 'A jornada de Bilbo é a definição perfeita de sair da zona de conforto e encarar o desconhecido.',
-      color: 'bg-orange-400',
+      analysis: 'Tolkien é um gênio da construção de mundos. O melhor livro que ja li na vida, com certeza.',
+      color: 'bg-green-400',
       amazon: 'https://amzn.to/3T5E5F5',
       cover: '/images/books/hobbit.png'
     },
     {
-      title: 'Depois (Stephen King)',
+      title: 'O guia do mochileiro das galáxias',
       progress: 100,
-      analysis: 'King sendo King. Um suspense sobrenatural que te prende do início ao fim.',
-      color: 'bg-red-500',
-      amazon: 'https://amzn.to/3U6G6H6',
-      cover: '/images/books/depoisstephenking.png'
+      analysis: 'Livro de ficção científica com uma pegada de filosofia também. O humor está presente do começo ao fim. Ri muito. Uma obra prima também.',
+      color: 'bg-blue-600',
+      amazon: 'https://amzn.to/3V7H7I7',
+      cover: '/images/books/guiadomochileirodasgalaxias.png'
     },
     {
       title: 'Dom Quixote',
       progress: 100,
-      analysis: 'O clássico dos clássicos. A loucura de Quixote é uma forma de manter a esperança viva.',
+      analysis: 'Dom quixote é um maluco. Mas o livro é uma obra prima. Li ainda na adolescência e preciso ler novamente.',
       color: 'bg-amber-600',
       amazon: 'https://amzn.to/3V7H7I7',
       cover: '/images/books/domquixote.png'
@@ -65,16 +64,16 @@ function Books() {
     {
       title: 'Fahrenheit 451',
       progress: 18,
-      analysis: 'Assustadoramente atual. Uma reflexão necessária sobre o consumo de informação rasa.',
-      color: 'bg-gray-500',
+      analysis: 'Ainda tentando me fixar no livro. Uma  hora vai.',
+      color: 'bg-red-500',
       amazon: 'https://amzn.to/3W8I8J8',
       cover: '/images/books/fahrenheit451.png'
     },
     {
       title: 'O Mágico de Oz',
       progress: 10,
-      analysis: 'Redescobrindo os clássicos infantis sob uma ótica de engenharia de caminhos.',
-      color: 'bg-pink-400',
+      analysis: 'Confesso que esse aqui eu por impulso. Mas to gostando.',
+      color: 'bg-green-700',
       amazon: 'https://amzn.to/3X9J9K9',
       cover: '/images/books/magicodeoz.png'
     }
@@ -148,7 +147,7 @@ function Books() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-black uppercase mb-10 flex items-center text-blue-400">
-              [ TECHNICAL_STACK ]
+              [ LIVROS_TECNICOS ]
             </h3>
             <div className="space-y-2">
               {technicalBooks.map(renderBookCard)}
@@ -157,7 +156,7 @@ function Books() {
 
           <div>
             <h3 className="text-2xl font-black uppercase mb-10 flex items-center text-purple-400">
-              [ OFF_DUTY_READS ]
+              [ LIVROS_NÃO_TECNICOS ]
             </h3>
             <div className="space-y-2">
               {nonTechnicalBooks.map(renderBookCard)}

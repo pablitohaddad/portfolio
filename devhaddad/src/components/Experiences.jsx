@@ -29,9 +29,9 @@ function Experience() {
       logo: '/images/experiences/totalexpresslogo.jpeg',
       linkedin: 'https://www.linkedin.com/company/totalexpress',
       color: 'bg-yellow-400',
-      description: 'Estou construindo minha jornada na maior empresa de entrega privada do Brasil :)',
+      description: 'Estou construindo minha jornada na maior empresa de entrega privada do Brasil :) Em breve atualizo...',
       techs: ['docker-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot', 'postgresql-svgrepo-com', 'git-svgrepo-com', 'linux-tux-svgrepo-com'],
-      bullets: ['Atuação no ecossistema de logística e entregas.', 'Desenvolvimento de soluções robustas para alta demanda.']
+      bullets: []
     },
     {
       company: 'Nasajon',
@@ -41,7 +41,7 @@ function Experience() {
       linkedin: 'https://www.linkedin.com/company/nasajon/',
       color: 'bg-red-500',
       techs: ['docker-svgrepo-com', 'flask-svgrepo-com', 'git-svgrepo-com', 'linux-tux-svgrepo-com', 'php-svgrepo-com', 'postgresql-svgrepo-com', 'python-svgrepo-com', 'rabbitmq-icon-svgrepo-com', 'react-svgrepo-com', 'typescript-icon-svgrepo-com'],
-      bullets: ['Desenvolvimento do Gateway "Base Forte".', 'Redução de latência na sincronização ERP/CRM.', 'Otimização de performance em PL/pgSQL.']
+      bullets: ['Desenvolvimento do gateway de sincronização de dados bidirecional do projeto "Base Forte".', 'Otimização de performance em PL/pgSQL.']
     },
     {
       company: 'UNEMAT',
@@ -51,7 +51,7 @@ function Experience() {
       linkedin: 'https://www.linkedin.com/company/unematoficial/',
       color: 'bg-blue-600',
       techs: ['java-svgrepo-com', 'icons8-spring-boot', 'git-svgrepo-com', 'linux-tux-svgrepo-com', 'postgresql-svgrepo-com', 'rabbitmq-icon-svgrepo-com', 'kafka-svgrepo-com'],
-      bullets: ['Capacitação de 22 alunos em Java/Spring Boot.', 'Orientação em projetos reais usando Kafka e RabbitMQ.']
+      bullets: ['Capacitação de 22 alunos do curso de Ciência da Computação na UNEMAT em Java/Spring Boot.', 'Orientação em projetos reais. Que solucionam problemas da sociedade.']
     },
     {
       company: 'ExpiaAí',
@@ -61,7 +61,7 @@ function Experience() {
       linkedin: null,
       color: 'bg-orange-500',
       techs: ['java-svgrepo-com', 'icons8-spring-boot', 'docker-svgrepo-com', 'git-svgrepo-com', 'postgresql-svgrepo-com', 'rabbitmq-icon-svgrepo-com', 'linux-tux-svgrepo-com', 'sqlite-svgrepo-com'],
-      bullets: ['Arquitetura de plataforma QR Code.', '90% de cobertura de testes com JUnit/Mockito.']
+      bullets: ['Aplicação de validação de motoristas de aplicativos de mobilidade urbana.', '90% de cobertura de testes com JUnit/Mockito.']
     },
     {
       company: 'CompassUOL',
@@ -71,7 +71,7 @@ function Experience() {
       linkedin: 'https://www.linkedin.com/company/compass-uol',
       color: 'bg-black',
       techs: ['java-svgrepo-com', 'icons8-spring-boot', 'aws-svgrepo-com', 'docker-svgrepo-com', 'git-svgrepo-com', 'postgresql-svgrepo-com', 'rabbitmq-icon-svgrepo-com', 'linux-tux-svgrepo-com', 'mongo-svgrepo-com'],
-      bullets: ['Desenvolvimento de APIs RESTful.', 'Gerenciamento de infraestrutura AWS (EC2, S3).']
+      bullets: ['Desenvolvimento de APIs RESTful.', 'Gerenciamento de infraestrutura AWS (EC2, S3, SNS, SQS, Lambda).']
     }
   ];
 

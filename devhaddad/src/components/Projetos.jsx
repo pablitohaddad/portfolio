@@ -4,7 +4,7 @@ function Projetos() {
   const projects = [
     {
       title: 'F-DOZE',
-      description: 'Uma solução focada em performance e eficiência, explorando o poder do desenvolvimento moderno.',
+      description: 'Jogo de navegador para testar os conhecimentos do jogador no F12 (DevTools).',
       link: 'https://f-doze.vercel.app/',
       // Nomes dos arquivos SVG que já mapeamos anteriormente
       techs: ['react-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot']
@@ -29,7 +29,7 @@ function Projetos() {
             <div>
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">F-DOZE</h3>
-                <span className="bg-black text-white text-[10px] px-2 py-1 font-bold">LIVE PROJECT</span>
+                <span className="bg-black text-white text-[10px] px-2 py-1 font-bold"></span>
               </div>
               <p className="text-gray-700 font-medium mb-6 leading-relaxed">
                 {projects[0].description}
@@ -44,7 +44,7 @@ function Projetos() {
                     title={tech.split('-')[0]}
                   >
                     <img 
-                      src={`/assets/images/techs/${tech}.svg`} 
+                      src={`/images/techs/${tech}.svg`} 
                       alt={tech} 
                       className="w-6 h-6 object-contain" 
                     />
@@ -81,9 +81,10 @@ function Projetos() {
                 <h3 className="text-3xl font-black tracking-tighter uppercase">devhaddad</h3>
               </div>
               
-              <p className="text-white text-xl font-bold mb-2">Engenharia de Software no Youtube.</p>
+              <p className="text-white text-xl font-bold mb-2">Videos de vez em nunca (nunca mesmo)</p>
               <p className="text-red-100 font-medium mb-6">
-                Tutoriais, dicas de carreira e o dia a dia de um desenvolvedor full stack.
+                Fiz meu curso de Java básico pro GEDS no YouTube. E parei por aí. 
+                Quem sabe não volto algum dia.
               </p>
             </div>
 
