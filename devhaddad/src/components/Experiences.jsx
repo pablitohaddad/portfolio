@@ -144,7 +144,7 @@ function Experience() {
                       className="flex items-center justify-center w-10 h-10 bg-gray-50 border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-75 hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none"
                       title={`Doc: ${tech.split('-')[0]}`} 
                     >
-                      <img src={`/assets/images/techs/${tech}.svg`} alt={tech} className="w-6 h-6 object-contain" />
+                      <img src={`/images/techs/${tech}.svg`} alt={tech} className="w-6 h-6 object-contain" />
                     </a>
                   ))}
                 </div>
