@@ -26,7 +26,9 @@ function Header() {
     fetch(viewsUrl)
       .then(res => res.json())
       .then(res => {
-        if (res?.data?.count !== undefined) setViews(res.data.count);
+        if (res?.data?.up_count !== undefined && res?.data?.down_count !== undefined) {
+          setViews(res.data.up_count - res.data.down_count);
+        }
       })
       .catch(err => console.error("Erro views:", err));
 
@@ -34,7 +36,9 @@ function Header() {
     fetch(likesUrl)
       .then(res => res.json())
       .then(res => {
-        if (res?.data?.count !== undefined) setLikes(res.data.count);
+        if (res?.data?.up_count !== undefined && res?.data?.down_count !== undefined) {
+          setLikes(res.data.up_count - res.data.down_count);
+        }
       })
       .catch(err => console.error("Erro likes:", err));
 
