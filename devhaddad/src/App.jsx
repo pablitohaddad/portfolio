@@ -7,6 +7,7 @@ import Projetos from './components/Projetos';
 import Books from './components/Books';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Home />
         <About />
         <Experiences />
+        <Testimonials />
         <Projetos />
         <Books />
         <Contact />
