@@ -26,6 +26,13 @@ const Testimonials = () => {
       link: "https://linkedin.com/in/davifernandodias",
       foto: "https://media.licdn.com/dms/image/v2/D4D03AQFUa1xpbHdzLw/profile-displayphoto-shrink_200_200/B4DZRczKREGUAg-/0/1736723704646?e=1777507200&v=beta&t=yYNp6wwckltR04WAhUbjvFgOr3wpNT3EQzdR8HhGlg0" 
     },
+    {
+      nome: "Anthonny G. Marins Alves ",
+      cargo: "Ex-Colega de Time no Expia AI",
+      comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
+      link: "https://www.linkedin.com/in/tonnygabriell/",
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQEt-Rn_XtRrng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724802138377?e=1777507200&v=beta&t=JuaYMRPhOVppiZBkiMjRXMecYFOSDmqfiaW3p8UIsWU" 
+    },
   ];
 
   const displayList = [...testimonials, ...testimonials];
