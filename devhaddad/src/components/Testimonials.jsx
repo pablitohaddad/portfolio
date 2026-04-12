@@ -27,11 +27,18 @@ const Testimonials = () => {
       foto: "https://media.licdn.com/dms/image/v2/D4D03AQFUa1xpbHdzLw/profile-displayphoto-shrink_200_200/B4DZRczKREGUAg-/0/1736723704646?e=1777507200&v=beta&t=yYNp6wwckltR04WAhUbjvFgOr3wpNT3EQzdR8HhGlg0" 
     },
     {
-      nome: "Anthonny G. Marins Alves ",
+      nome: "Anthonny G. Marins Alves",
       cargo: "Ex-Colega de Time no Expia AI",
       comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
       link: "https://www.linkedin.com/in/tonnygabriell/",
       foto: "https://media.licdn.com/dms/image/v2/D4D03AQEt-Rn_XtRrng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724802138377?e=1777507200&v=beta&t=JuaYMRPhOVppiZBkiMjRXMecYFOSDmqfiaW3p8UIsWU" 
+    },
+    {
+      nome: "Ryan Marinho",
+      cargo: "Ex-Colega de Time na Nasajon",
+      comentario: "Trabalhar com o Pablo na Nasajon foi uma experiência incrível. Ele se destaca pelo comprometimento, pela clareza na comunicação e pela capacidade técnica, sempre agregando valor ao time e elevando o nível das entregas. Sem dúvida, foi uma ótima oportunidade de aprendizado e crescimento profissional ao seu lado.",
+      link: "https://www.linkedin.com/in/ryan-marinho-861120211/?locale=pt",
+      foto: "https://media.licdn.com/dms/image/v2/D4E35AQFIJ_wuhzIvjQ/profile-framedphoto-shrink_200_200/B4EZ1GZvsUIgAY-/0/1775002647650?e=1776643200&v=beta&t=TKmtGURnGtLC80QG0-Px2SYiyvsn-tUk6eQ3FJ-7smI" 
     },
   ];
 
