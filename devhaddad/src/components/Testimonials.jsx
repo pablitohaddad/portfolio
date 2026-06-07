@@ -10,35 +10,35 @@ const Testimonials = () => {
       cargo: "Ex-Colegas de Time na Nasajon",
       comentario: "Foi uma grande experiência trabalhar com o Pablo na Nasajon. Ele é um profissional extremamente competente e que agrega muito à equipe.",
       link: "https://linkedin.com/in/muriloguizelin",
-      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFjsJKM8keMXg/profile-displayphoto-scale_200_200/B4DZn4KLoJGkAY-/0/1760805044888?e=1777507200&v=beta&t=zZ4bKWzrsl6OtJz4NQ0j83RS1c2uDF6NgHmUKQBYtF4" 
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFjsJKM8keMXg/profile-displayphoto-scale_400_400/B4DZn4KLoJGkAg-/0/1760805044888?e=1782345600&v=beta&t=rixbC8l9-fo63LD3Ey6hReRvD4oGwmOyLFsSr366QbQ" 
     },
     {
       nome: "Caio Souza",
       cargo: "Colega de Faculdade",
       comentario: "Uma pessoa brilhante e, sem dúvida, uma das pessoas mais dedicadas e esforçadas que eu já conheci.",
       link: "https://linkedin.com/in/caiosouzasantos",
-      foto: "https://media.licdn.com/dms/image/v2/D4D03AQHoWcHKy2XM7Q/profile-displayphoto-scale_200_200/B4DZzy_tf4IwAY-/0/1773603314373?e=1777507200&v=beta&t=WAbQmVnC6TQ2njp3lX1l5qyWERzNap8uR4qRyI_R60M" 
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQHoWcHKy2XM7Q/profile-displayphoto-scale_400_400/B4DZzy_tf4IwAg-/0/1773603314373?e=1782345600&v=beta&t=lu7hZmvfD03eQpICJviW_HCkHINzIN6gJ57e27UTu6E" 
     },
     {
       nome: "Davi Dias",
       cargo: "Colega de profissão",
       comentario: "Pablo, sem dúvidas, foi uma das pessoas mais esforçadas que eu conheci. Já na primeira impressão, vi que ele é bem receptivo em ajudar, mesmo que não ganhe nada em troca, e sempre confirma se o que ensinou foi realmente compreendido, o que eu considero uma grande diferença.",
       link: "https://linkedin.com/in/davifernandodias",
-      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFUa1xpbHdzLw/profile-displayphoto-shrink_200_200/B4DZRczKREGUAg-/0/1736723704646?e=1777507200&v=beta&t=yYNp6wwckltR04WAhUbjvFgOr3wpNT3EQzdR8HhGlg0" 
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFUa1xpbHdzLw/profile-displayphoto-shrink_400_400/B4DZRczKREGUAo-/0/1736723704626?e=1782345600&v=beta&t=BzPHH_qgsrsu1M2_UaDpeQuLn5a8Mb255L-iR7FZ-8w" 
     },
     {
       nome: "Anthonny G. Marins Alves",
       cargo: "Ex-Colega de Time no Expia AI",
       comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
       link: "https://www.linkedin.com/in/tonnygabriell/",
-      foto: "https://media.licdn.com/dms/image/v2/D4D03AQEt-Rn_XtRrng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724802138377?e=1777507200&v=beta&t=JuaYMRPhOVppiZBkiMjRXMecYFOSDmqfiaW3p8UIsWU" 
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFjsJKM8keMXg/profile-displayphoto-scale_400_400/B4DZn4KLoJGkAg-/0/1760805044888?e=1782345600&v=beta&t=rixbC8l9-fo63LD3Ey6hReRvD4oGwmOyLFsSr366QbQ" 
     },
     {
       nome: "Ryan Marinho",
       cargo: "Ex-Colega de Time na Nasajon",
       comentario: "Trabalhar com o Pablo na Nasajon foi uma experiência incrível. Ele se destaca pelo comprometimento, pela clareza na comunicação e pela capacidade técnica, sempre agregando valor ao time e elevando o nível das entregas. Sem dúvida, foi uma ótima oportunidade de aprendizado e crescimento profissional ao seu lado.",
       link: "https://www.linkedin.com/in/ryan-marinho-861120211/?locale=pt",
-      foto: "https://media.licdn.com/dms/image/v2/D4E35AQFIJ_wuhzIvjQ/profile-framedphoto-shrink_200_200/B4EZ1GZvsUIgAY-/0/1775002647650?e=1776643200&v=beta&t=TKmtGURnGtLC80QG0-Px2SYiyvsn-tUk6eQ3FJ-7smI" 
+      foto: "https://media.licdn.com/dms/image/v2/D4E03AQHXuNipWcCdqg/profile-displayphoto-scale_400_400/B4EZ5gzGsoIgAg-/0/1779740471629?e=1782345600&v=beta&t=NmjFtHfZjXfBJIu8gk2YRP1k0CNaN9RuRR-Js2AlE30" 
     },
   ];
 

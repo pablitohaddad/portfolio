@@ -37,7 +37,7 @@ function Home() {
         {/* Imagem */}
         <div className="shrink-0 w-64 h-64 md:w-72 md:h-72 rounded-none overflow-hidden border-4 border-white shadow-[8px_8px_0px_0px_rgba(96,165,250,1)] transform transition-transform duration-500 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
           <img
-            src="/images/pablohaddad.jpeg"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFmxJndkrsgZQ/profile-displayphoto-scale_400_400/B4DZ5bJDf.G4Ag-/0/1779645561188?e=1782345600&v=beta&t=6TYa0058U7pSPL0hT_7rO4t65YwDtctpS0w28W5COU4"
             alt="Pablo Haddad - Engenheiro de Software"
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
           />
