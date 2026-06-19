@@ -31,7 +31,7 @@ const Testimonials = () => {
       cargo: "Ex-Colega de Time no Expia AI",
       comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
       link: "https://www.linkedin.com/in/tonnygabriell/",
-      foto: "https://media.licdn.com/dms/image/v2/D4D03AQFjsJKM8keMXg/profile-displayphoto-scale_400_400/B4DZn4KLoJGkAg-/0/1760805044888?e=1782345600&v=beta&t=rixbC8l9-fo63LD3Ey6hReRvD4oGwmOyLFsSr366QbQ" 
+      foto: "https://media.licdn.com/dms/image/v2/D4D03AQEt-Rn_XtRrng/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724802138392?e=1783555200&v=beta&t=-tdfRJjgrCeW_IxbkCEM6Ov5fTy1OYbwKW8-7vn-PPg" 
     },
     {
       nome: "Ryan Marinho",

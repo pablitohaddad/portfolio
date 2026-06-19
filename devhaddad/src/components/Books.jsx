@@ -79,8 +79,8 @@ function Books() {
     },
     {
       title: 'O Mágico de Oz',
-      progress: 45,
-      analysis: 'Confesso que esse aqui eu por impulso. Mas to gostando.',
+      progress: 100,
+      analysis: 'Um livro simples, mas com uma história rica e cheia de reviravoltas. Um livro infantil muito bom!',
       color: 'bg-green-700',
       amazon: 'https://www.amazon.com.br/M%C3%A1gico-Oz-Edi%C3%A7%C3%A3o-bil%C3%ADngue-ilustrada/dp/6583545551/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=YJHQD6WZ06TO&dib=eyJ2IjoiMSJ9.lgmDF91pM-siBCWC2qOBQAbLCluqRTGshzoFSW9OSJCL2FMGDcL2YCcS_2tgOgm9Np3dip5hQQ6d4gBe_zVU-EenGdZOx10m7LLRl2uDinkVWlK8YpgszaVV3SE2xxg5dlX6rKv4pwPqyy4q5H3xpNyuUux3bk2RMrFATIitsf8b0SP-0yi1eloCOE40WmcUTgYBPUktbHFLFfKZr94B9MtcFgrplOY60PpknTtTIkmapZ_b7z8V-39SkDWeP9nASil1Qy5cE5K1RzocQymkj9uPBlN0jZz95Z8Ue-JNr_w.2mJHDk1oR7GstltBOkotUx00_qNdXS_6jDMsEqknUIY&dib_tag=se&keywords=O+magico+de+oz&qid=1776485983&sprefix=o+magico+de+o%2Caps%2C214&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1',
       cover: '/images/books/magicodeoz.png'
