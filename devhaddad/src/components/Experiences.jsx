@@ -29,9 +29,13 @@ function Experience() {
       logo: '/images/experiences/totalexpresslogo.jpeg',
       linkedin: 'https://www.linkedin.com/company/totalexpress',
       color: 'bg-yellow-400',
-      description: 'Estou construindo minha jornada na maior empresa de entrega privada do Brasil :) Em breve atualizo...',
-      techs: ['docker-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot', 'postgresql-svgrepo-com', 'git-svgrepo-com', 'linux-tux-svgrepo-com'],
-      bullets: []
+      techs: ['docker-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot', 'postgresql-svgrepo-com', 'git-svgrepo-com', 'linux-tux-svgrepo-com', 'php-svgrepo-com'],
+      bullets: [
+        'Desenvolvimento e sustentação de sistemas financeiros e fiscais utilizando PHP 5.6, PHP 8.2/8.4 e Laravel.',
+        'Atuação no Motor Fiscal, responsável pelo cálculo tributário de aproximadamente 400 mil encomendas por dia, envolvendo ICMS, PIS/COFINS, IBS/CBS e CFOP.',
+        'Desenvolvimento de fluxos e processamentos assíncronos utilizando AWS S3, SQS, SNS e Lambda.',
+        'Manutenção e refatoração de sistemas legados e modernos, aplicando boas práticas e Design Patterns, como Command.'
+      ]
     },
     {
       company: 'Nasajon',
@@ -135,7 +139,9 @@ function Experience() {
                 </div>
 
                 {exp.description && (
-                  <p className="mb-4 text-sm italic font-bold text-gray-600">{exp.description}</p>
+                  <p className="mb-4 text-sm italic font-bold text-gray-600 leading-relaxed">
+                    {exp.description}
+                  </p>
                 )}
 
                 <ul className="space-y-2 mb-6 text-sm">

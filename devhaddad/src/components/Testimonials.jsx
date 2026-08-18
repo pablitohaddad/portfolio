@@ -6,11 +6,11 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      nome: "Murilo Guizelin",
-      cargo: "Ex-Colegas de Time na Nasajon",
-      comentario: "Foi uma grande experiência trabalhar com o Pablo na Nasajon. Ele é um profissional extremamente competente e que agrega muito à equipe.",
-      link: "https://linkedin.com/in/muriloguizelin",
-      foto: "/images/friends/murilo-guizelin.png"
+      nome: "Anthonny G. Marins Alves",
+      cargo: "Ex-Colega de Time no Expia AI",
+      comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
+      link: "https://www.linkedin.com/in/tonnygabriell/",
+      foto: "/images/friends/anthony-gabriel.jpg"
     },
     {
       nome: "Caio Souza",
@@ -20,18 +20,25 @@ const Testimonials = () => {
       foto: "/images/friends/caio-souza.jpg"
     },
     {
+      nome: "Ryan Zucchi",
+      cargo: "Colega de Faculdade",
+      comentario: "Pablo Haddad é um garoto formidável e muito dedicado, um verdadeiro exemplo a ser seguido. Seu esforço e sua determinação são incríveis e, sem dúvida, ele terá muito sucesso no futuro. Tenho certeza de que todo esse empenho será recompensado!",
+      link: "https://www.linkedin.com/in/ryanzucchi/",
+      foto: "/images/friends/ryan-zucchi.jpg"
+    },
+    {
+      nome: "Murilo Guizelin",
+      cargo: "Ex-Colegas de Time na Nasajon",
+      comentario: "Foi uma grande experiência trabalhar com o Pablo na Nasajon. Ele é um profissional extremamente competente e que agrega muito à equipe.",
+      link: "https://linkedin.com/in/muriloguizelin",
+      foto: "/images/friends/murilo-guizelin.png"
+    },
+    {
       nome: "Davi Dias",
       cargo: "Colega de profissão",
       comentario: "Pablo, sem dúvidas, foi uma das pessoas mais esforçadas que eu conheci. Já na primeira impressão, vi que ele é bem receptivo em ajudar, mesmo que não ganhe nada em troca, e sempre confirma se o que ensinou foi realmente compreendido, o que eu considero uma grande diferença.",
       link: "https://linkedin.com/in/davifernandodias",
       foto: "/images/friends/davi-dias.jpg"
-    },
-    {
-      nome: "Anthonny G. Marins Alves",
-      cargo: "Ex-Colega de Time no Expia AI",
-      comentario: "Pablo foi muito criativo na proposta e desenvolvimento do Expia Aí. Também foi bastante resiliente quando encontramos novos problemas e conseguimos solucioná-los. ",
-      link: "https://www.linkedin.com/in/tonnygabriell/",
-      foto: "/images/friends/anthony-gabriel.jpg"
     },
     {
       nome: "Ryan Marinho",
