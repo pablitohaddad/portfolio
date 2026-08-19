@@ -100,7 +100,7 @@ function Books() {
           rel="noopener noreferrer" 
           className="flex-shrink-0 group/cover relative inline-block mx-auto sm:mx-0"
         >
-          <div className="w-32 h-44 bg-gray-200 border-2 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all group-hover/cover:translate-x-1 group-hover/cover:translate-y-1 group-hover/cover:shadow-none">
+          <div className="w-24 h-32 sm:w-32 sm:h-44 md:w-40 md:h-52 bg-gray-200 border-2 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all group-hover/cover:translate-x-1 group-hover/cover:translate-y-1 group-hover/cover:shadow-none">
             <img 
               src={book.cover} 
               alt={`Capa do livro ${book.title}`}
@@ -147,12 +147,12 @@ function Books() {
       <div className="max-w-6xl mx-auto">
         
         <div className="mb-20">
-          <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter inline-block border-b-8 border-blue-400 pb-2">
+          <h2 className="text-[clamp(2rem,8vw,4.5rem)] font-black uppercase tracking-tighter inline-block border-b-8 border-blue-400 pb-2">
             ./leituras_log
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-black uppercase mb-10 flex items-center text-blue-400">
               [ LIVROS_TECNICOS ]

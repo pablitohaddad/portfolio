@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="bg-gray-900 border-t-4 border-white text-white font-mono py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-6">
         
         {/* Marca / Logo Reduzida */}
         <div className="text-xl font-black tracking-tighter">

@@ -70,28 +70,16 @@ const Testimonials = () => {
 
         {/* Container do Carrossel */}
         <div className="relative w-full overflow-hidden">
-          <div 
-            className="flex gap-8 py-4 w-max group"
-            style={{ animation: 'loop-scroll 30s linear infinite' }}
-          >
-            <style>
-              {`
-                @keyframes loop-scroll {
-                  from { transform: translateX(0); }
-                  to { transform: translateX(-50%); }
-                }
-                .group:hover { animation-play-state: paused !important; }
-              `}
-            </style>
+          <div className="flex gap-8 py-4 w-max group xl:animate-loop-scroll">
 
             {displayList.map((t, i) => (
               <div 
                 key={i} 
-                className="w-[300px] md:w-[450px] bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col hover:scale-[1.01] transition-transform"
+                className="w-[calc(100vw-3rem)] sm:w-[300px] xl:w-[450px] flex-shrink-0 bg-white border-4 border-black p-4 sm:p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col hover:scale-[1.01] transition-transform"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <a href={t.link} target="_blank" rel="noopener noreferrer" className="relative flex-shrink-0 group/photo block" title={`Ver perfil de ${t.nome}`}>
-                    <div className="w-14 h-14 border-4 border-black bg-gray-200 overflow-hidden relative z-10 group-hover/photo:-translate-x-1 group-hover/photo:-translate-y-1 transition-transform">
+                    <div className="w-12 h-12 md:w-14 md:h-14 border-4 border-black bg-gray-200 overflow-hidden relative z-10 group-hover/photo:-translate-x-1 group-hover/photo:-translate-y-1 transition-transform">
                       {t.foto ? (
                         <img src={t.foto} alt={t.nome} className="w-full h-full object-cover" />
                       ) : (
@@ -118,7 +106,7 @@ const Testimonials = () => {
         {/* Modal atualizado com Envio de Foto e Efeito de Clique */}
         {showModal && (
           <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 backdrop-blur-sm">
-            <div className="bg-white border-4 border-black p-8 max-w-2xl w-full shadow-[10px_10px_0px_0px_#A78BFA] relative">
+            <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto bg-white border-4 border-black p-4 sm:p-8 max-w-2xl w-full shadow-[10px_10px_0px_0px_#A78BFA] relative">
               <button onClick={() => setShowModal(false)} className="absolute -top-4 -right-4 bg-red-500 text-white font-black border-4 border-black w-10 h-10 hover:bg-black transition-colors">X</button>
               <h3 className="text-2xl font-black mb-4 uppercase italic">Deixe sua recomendação!_</h3>
               

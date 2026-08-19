@@ -33,9 +33,9 @@ function Home() {
       id="home"
       className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-900 text-white overflow-hidden font-mono border-t-2 border-white"
     >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-20">
+      <div className="w-full max-w-6xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-8 xl:gap-12 py-12 xl:py-20">
         {/* Imagem */}
-        <div className="shrink-0 w-64 h-64 md:w-72 md:h-72 rounded-none overflow-hidden border-4 border-white shadow-[8px_8px_0px_0px_rgba(96,165,250,1)] transform transition-transform duration-500 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+        <div className="shrink-0 w-48 h-48 sm:w-64 sm:h-64 xl:w-72 xl:h-72 rounded-none overflow-hidden border-4 border-white shadow-[8px_8px_0px_0px_rgba(96,165,250,1)] transform transition-transform duration-500 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
           <img
             src="/pablohaddad.jpeg"
             alt="Pablo Haddad - Engenheiro de Software"
@@ -44,12 +44,12 @@ function Home() {
         </div>
 
         {/* Conteúdo de Texto */}
-        <div className="text-center md:text-left">
+        <div className="min-w-0 text-center xl:text-left">
           <p className="text-lg md:text-xl text-blue-400 mb-2 font-bold uppercase tracking-widest">
             // Bem-vindo!
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-4 tracking-tighter uppercase">
+          <h1 className="text-[clamp(2.5rem,9vw,4.5rem)] font-black leading-tight mb-4 tracking-tighter uppercase">
             PABLO HADDAD
           </h1>
 
@@ -59,7 +59,7 @@ function Home() {
             </p>
           </div>
 
-          <p className="max-w-lg mx-auto md:mx-0 text-base md:text-lg text-gray-300 leading-relaxed mb-8 border-l-4 border-white pl-4 italic">
+          <p className="max-w-lg mx-auto xl:mx-0 text-base md:text-lg text-gray-300 leading-relaxed mb-8 border-l-4 border-white pl-4 italic">
             Sou pedreiro de software desde 2023, e amante do Home Office. Obrigado pela visita!
             Deixe um like se curtir o meu portfolio, ou um dislike se quiser.
           </p>
@@ -69,7 +69,7 @@ function Home() {
             <p className="text-xs font-black uppercase tracking-widest text-white mb-4">
               // ME_SIGA_NAS_REDES_SOCIAIS
             </p>
-            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-3 justify-center xl:justify-start">
               {/* Instagram */}
               <a
                 href="https://instagram.com/devhaddad"

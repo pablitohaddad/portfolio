@@ -111,7 +111,7 @@ function Experience() {
             <div key={index} className="mb-20 relative">
               
               {/* LOGO DA EMPRESA */}
-              <div className="absolute -left-[62px] top-0 w-14 h-14 border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] flex items-center justify-center overflow-hidden bg-gray-700 transition-all duration-75 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-pointer">
+              <div className="absolute -left-14 md:-left-[62px] top-0 w-10 h-10 md:w-14 md:h-14 border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] flex items-center justify-center overflow-hidden bg-gray-700 transition-all duration-75 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-pointer">
                 {exp.linkedin ? (
                   <a href={exp.linkedin} target="_blank" rel="noopener noreferrer" className="w-full h-full block">
                     <img 

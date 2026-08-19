@@ -17,15 +17,15 @@ function Projetos() {
         
         {/* Título Estilo Badge */}
         <div className="flex justify-center mb-16">
-          <h2 className="inline-block bg-blue-400 text-black text-4xl md:text-6xl font-black px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-1">
+          <h2 className="inline-block bg-blue-400 text-black text-[clamp(2rem,8vw,3.75rem)] font-black px-4 sm:px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-1">
             ./PROJETOS
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
           
           {/* Card do F-DOZE */}
-          <div className="bg-gray-100 p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+          <div className="bg-gray-100 p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
             <div>
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">F-DOZE</h3>
@@ -63,7 +63,7 @@ function Projetos() {
           </div>
 
           {/* Destaque Especial: Canal devhaddad */}
-          <div className="bg-[#FF0000] p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-white flex flex-col justify-between relative overflow-hidden group transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+          <div className="bg-[#FF0000] p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-white flex flex-col justify-between relative overflow-hidden group transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
             
             <div className="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
               <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor">

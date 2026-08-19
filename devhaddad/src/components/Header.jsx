@@ -7,6 +7,7 @@ function Header() {
   // Estados
   const [likes, setLikes] = useState(0);
   const [views, setViews] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLiked, setIsLiked] = useState(() => localStorage.getItem("pablo_voted") === "true");
 
   // Refs e Configs
@@ -72,14 +73,51 @@ function Header() {
 
   return (
     <header className="bg-gray-900 border-b-2 border-white sticky top-0 z-50 font-mono">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between p-4 gap-2 flex-nowrap">
-        
+      <div className="max-w-[1440px] mx-auto px-3 py-3 sm:px-4">
+
+        {/* MOBILE COMPACT BAR */}
+        <div className="relative flex w-full min-w-0 items-center justify-between gap-2 xl:hidden">
+          <div className="shrink-0">
+            <button type="button" className="flex min-h-11 min-w-11 items-center justify-center border-2 border-white bg-gray-800 rounded cursor-pointer" aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"} aria-controls="mobile-menu" aria-expanded={isMenuOpen} onClick={() => setIsMenuOpen((open) => !open)}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+            <div className={`absolute left-0 top-full mt-3 w-[min(20rem,calc(100vw-1.5rem))] bg-gray-800 border-2 border-white shadow-[4px_4px_0px_0px_white] z-50 p-3 ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
+              <nav className="flex flex-col gap-2">
+                {navLinks.map((label) => (
+                  <a key={label} href={`#${sanitizeId(label)}`} className="block px-4 py-3 text-white font-bold uppercase hover:bg-gray-700 rounded" onClick={() => setIsMenuOpen(false)}>
+                    {label}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
+
+          <a href="#home" className="min-w-0 truncate text-base font-bold tracking-tighter text-white sm:text-lg">PABLO<span className="text-blue-400">HADDAD</span></a>
+
+          <div className="flex shrink-0 items-center gap-1 sm:gap-2">
+            <div className="hidden items-center gap-1 bg-gray-800 px-2 py-1 border-2 border-white text-white text-xs rounded min-[420px]:flex">
+              <Eye size={14} className="text-blue-400" />
+              <span className="tabular-nums font-black">{views}</span>
+            </div>
+            <button onClick={handleLike} disabled={isLiked} className={`flex items-center gap-1 px-2 py-1 border-2 border-white text-[10px] font-black uppercase ${isLiked ? 'bg-green-600 text-white' : 'bg-gray-800 text-white'}`}>
+              <ThumbsUp size={14} strokeWidth={3} />
+              <span>{likes}</span>
+            </button>
+            <button onClick={handleDislike} className="flex items-center gap-1 px-2 py-1 border-2 border-white bg-gray-800 text-white text-[10px] font-black uppercase">
+              <ThumbsDown size={14} strokeWidth={3} />
+            </button>
+          </div>
+        </div>
+
+        <div className="hidden w-full items-center justify-between gap-3 xl:flex">
         {/* LOGO & VIEWS */}
         <div className="flex-shrink-0 flex items-center gap-4">
           <a href="#home" className="text-xl font-bold tracking-tighter text-white">
             PABLO<span className="text-blue-400">HADDAD</span>
           </a>
-          <div className="hidden sm:flex items-center gap-2 bg-gray-800 border-2 border-white px-2 py-1 shadow-[2px_2px_0px_0px_white]">
+          <div className="flex items-center gap-2 bg-gray-800 border-2 border-white px-2 py-1 shadow-[2px_2px_0px_0px_white]">
             <Eye size={14} className="text-blue-400" />
             <span className="text-[10px] font-black text-white uppercase tabular-nums">
               Views: {views}
@@ -88,7 +126,7 @@ function Header() {
         </div>
 
         {/* NAV */}
-        <nav className="flex items-center gap-2 overflow-x-auto px-2 scrollbar-hide">
+        <nav className="flex min-w-0 items-center gap-2 px-2">
           {navLinks.map((label) => (
             <a 
               key={label} 
@@ -99,6 +137,8 @@ function Header() {
             </a>
           ))}
         </nav>
+
+        {/* Mobile menu handled in compact bar above */}
 
         {/* VOTES */}
         <div className="flex items-center gap-2 flex-shrink-0">
@@ -123,6 +163,7 @@ function Header() {
             <ThumbsDown size={14} strokeWidth={3} />
             0
           </button>
+        </div>
         </div>
       </div>
     </header>

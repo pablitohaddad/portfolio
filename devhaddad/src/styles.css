@@ -6,3 +6,13 @@ body {
   background: var(--bg);
   color: var(--text);
 }
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, input, textarea, button { max-width: 100%; }
+p, h1, h2, h3, h4, a { overflow-wrap: anywhere; }
+section { scroll-margin-top: 4.5rem; }
+
+@media (max-width: 480px) {
+  section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+}

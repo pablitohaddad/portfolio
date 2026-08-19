@@ -9,12 +9,12 @@ function Contact() {
       <div className="max-w-4xl mx-auto">
         {/* Cabeçalho Estilo Sticker */}
         <div className="flex justify-center mb-12">
-          <h2 className="inline-block bg-[#FFEB3B] text-black text-4xl md:text-6xl font-black px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-1">
+          <h2 className="inline-block bg-[#FFEB3B] text-black text-[clamp(2rem,8vw,3.75rem)] font-black px-4 sm:px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-1">
             CONTATO_
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-12 items-start">
           {/* Lado Esquerdo: Info */}
           <div className="space-y-6">
             <h3 className="text-2xl font-black uppercase tracking-tighter">
@@ -30,7 +30,7 @@ function Contact() {
               </p>
               <a
                 href="mailto:pablohaddad73@gmail.com"
-                className="text-lg font-bold text-white hover:underline"
+                className="block break-all text-sm sm:text-lg font-bold text-white hover:underline"
               >
                 pablohaddad73@gmail.com
               </a>
