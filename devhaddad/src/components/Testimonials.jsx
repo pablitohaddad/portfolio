@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, User, Upload } from 'lucide-react';
+import { Plus, User } from 'lucide-react';
 
 const Testimonials = () => {
   const [showModal, setShowModal] = useState(false);
@@ -70,7 +70,7 @@ const Testimonials = () => {
 
         {/* Container do Carrossel */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex gap-8 py-4 w-max group xl:animate-loop-scroll">
+          <div className="testimonials-track flex w-max gap-8 py-4">
 
             {displayList.map((t, i) => (
               <div 
