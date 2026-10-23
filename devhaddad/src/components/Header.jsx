@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { ThumbsUp, ThumbsDown, Eye } from "lucide-react";
 
 function Header() {
-  const navLinks = ["Home", "Sobre", "Experiências", "Projetos", "Livros", "Contato"];
+  const navLinks = ["Home", "Sobre", "Experiências", "Projetos", "Contato"];
   
   // Estados
   const [likes, setLikes] = useState(0);
