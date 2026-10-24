@@ -6,8 +6,16 @@ function Projetos() {
       title: 'F-DOZE',
       description: 'Jogo de navegador para testar os conhecimentos do jogador no F12 (DevTools).',
       link: 'https://f-doze.vercel.app/',
-      // Nomes dos arquivos SVG que já mapeamos anteriormente
-      techs: ['react-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot']
+      techs: ['react-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot'],
+      buttonClass: 'bg-blue-500 hover:bg-blue-600'
+    },
+    {
+      title: 'GIT GOAT',
+      description: 'Jogo interativo em terminal para praticar Git, resolver conflitos e avançar por desafios com ranking.',
+      link: 'https://git-goat.vercel.app/',
+      techs: ['git-svgrepo-com', 'react-svgrepo-com', 'java-svgrepo-com', 'icons8-spring-boot'],
+      buttonClass: 'bg-emerald-500 hover:bg-emerald-600',
+      badge: 'NOVO'
     }
   ];
 
@@ -24,46 +32,53 @@ function Projetos() {
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
           
-          {/* Card do F-DOZE */}
-          <div className="bg-gray-100 p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-            <div>
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-3xl font-black uppercase tracking-tighter">F-DOZE</h3>
-                <span className="bg-black text-white text-[10px] px-2 py-1 font-bold"></span>
-              </div>
-              <p className="text-gray-700 font-medium mb-6 leading-relaxed">
-                {projects[0].description}
-              </p>
-              
-              {/* Ícones das Techs do Projeto */}
-              <div className="flex gap-3 mb-8">
-                {projects[0].techs.map(tech => (
-                  <div 
-                    key={tech} 
-                    className="flex items-center justify-center w-10 h-10 bg-white border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
-                    title={tech.split('-')[0]}
-                  >
-                    <img 
-                      src={`/images/techs/${tech}.svg`} 
-                      alt={tech} 
-                      className="w-6 h-6 object-contain" 
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <a 
-              href={projects[0].link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block w-full text-center bg-blue-500 text-white border-2 border-black py-3 font-black uppercase hover:bg-blue-600 transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-1 active:translate-y-1"
+          {projects.map(project => (
+            <div
+              key={project.title}
+              className="bg-gray-100 p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
             >
-              Acessar Projeto _
-            </a>
-          </div>
+              <div>
+                <div className="flex justify-between items-start gap-4 mb-4">
+                  <h3 className="text-3xl font-black uppercase tracking-tighter">{project.title}</h3>
+                  {project.badge && (
+                    <span className="bg-black text-white text-[10px] px-2 py-1 font-bold">
+                      {project.badge}
+                    </span>
+                  )}
+                </div>
+                <p className="text-gray-700 font-medium mb-6 leading-relaxed">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-3 mb-8">
+                  {project.techs.map(tech => (
+                    <div
+                      key={tech}
+                      className="flex items-center justify-center w-10 h-10 bg-white border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                      title={tech.split('-')[0]}
+                    >
+                      <img
+                        src={`/images/techs/${tech}.svg`}
+                        alt={tech}
+                        className="w-6 h-6 object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-block w-full text-center ${project.buttonClass} text-white border-2 border-black py-3 font-black uppercase transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-1 active:translate-y-1`}
+              >
+                Acessar Projeto _
+              </a>
+            </div>
+          ))}
 
           {/* Destaque Especial: Canal devhaddad */}
-          <div className="bg-[#FF0000] p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-white flex flex-col justify-between relative overflow-hidden group transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+          <div className="xl:col-span-2 bg-[#FF0000] p-5 sm:p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-white flex flex-col justify-between relative overflow-hidden group transition-all duration-75 hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
             
             <div className="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
               <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor">
